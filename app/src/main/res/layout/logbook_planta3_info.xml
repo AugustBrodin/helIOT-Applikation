@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/logbook_planta3_info_text"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B0C4DE"
+        android:textColor="#000000"/>
+
+</android.support.constraint.ConstraintLayout>

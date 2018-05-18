@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000080"
+    tools:context="org.intracode.heliot.Bevattning">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#87CEFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Watering_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E90FF"
+                android:textColor="#191970"
+                android:text="@string/Watering_title_text"
+                android:textSize="38sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant1_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant1_button"
+                android:textSize="30sp"
+                android:onClick="goToPlant1Watering"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant2_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant2_button"
+                android:textSize="30sp"
+                android:onClick="goToPlant2Watering"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant3_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant3_button"
+                android:textSize="30sp"
+                android:onClick="goToPlant3Watering"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant4_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant4_button"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant5_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant5_button"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant6_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant6_button"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant7_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant7_button"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant8_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant8_button"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/Watering_plant9_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/Watering_plant9_button"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

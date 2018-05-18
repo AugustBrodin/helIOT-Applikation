@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.intracode.heliot.WateringTimeTable">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#87CEFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/WateringTimeTable_viewAll_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#FAEBD7"
+                android:text="Inspektera tidtabell"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/WateringTimeTable_updateTable_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#FAEBD7"
+                android:text="Uppdatera tidtabell"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/WateringTimeTable_eraseTable_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B0C4DE"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#FAEBD7"
+                android:text="Radera bevattningsprofil"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E90FF"
+                android:textColor="#191970"
+                android:text="Ange ordernummber för att ändra eller ta bort bevattning."
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wateringTable_textView_newPlant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FAEBD7"
+                        android:layout_weight="1"
+                        android:text="Planta nr. :"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/wateringTable_editText_newPlant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FAEBD7"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wateringTable_textView_waterAmount"
+                        android:layout_width="245dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Vattenmängd :"
+                        android:textColor="#FAEBD7"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/wateringTable_editText_waterAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FAEBD7"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wateringTable_textView_timeHour"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Ange timme :"
+                        android:textColor="#FAEBD7"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/wateringTable_editText_timeHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FAEBD7"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wateringTable_textView_timeMin"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Ange minut :"
+                        android:textColor="#FAEBD7"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/wateringTable_editText_timeMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FAEBD7"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wateringTable_textView_Ordernumber"
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Ordernummer :"
+                        android:textColor="#FAEBD7"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/wateringTable_editText_Ordernumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#B0C4DE"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FAEBD7"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/wateringTable_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</android.support.constraint.ConstraintLayout>

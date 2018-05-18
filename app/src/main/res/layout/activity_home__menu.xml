@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006699"
+    tools:context="org.intracode.heliot.Home_Menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#87CEFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Mainmenu_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1E90FF"
+                android:textColor="#191970"
+                android:gravity="center"
+                android:text="@string/Mainmenu_title_text"
+                android:textSize="38sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/waterdrop_picture" />
+
+                <Button
+                    android:id="@+id/Mainmenu_chooseWater_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B0C4DE"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="#FAEBD7"
+                    android:gravity="center"
+                    android:onClick="goToBevattning"
+                    android:text="@string/Mainmenu_chooseWater_button"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="111dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/schueduler_new2_image" />
+
+                <Button
+                    android:id="@+id/Mainmenu_wateringScheme_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B0C4DE"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:onClick="goToBevattningsSchema"
+                    android:text="@string/Mainmenu_wateringScheme_button"
+                    android:textColor="#FAEBD7"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/sensor_new2_image" />
+
+                <Button
+                    android:id="@+id/Mainmenu_sensorValues_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B0C4DE"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="@string/Mainmenu_sensorValues_button"
+                    android:textColor="#FAEBD7"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/statistics_new3_image" />
+
+                <Button
+                    android:id="@+id/Mainmenu_tablesStatistics_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B0C4DE"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:onClick="goToTabeller"
+                    android:text="@string/Mainmenu_tablesStatistics_button"
+                    android:textColor="#FAEBD7"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="107dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/logbook_new3_image" />
+
+                <Button
+                    android:id="@+id/Mainmenu_records_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B0C4DE"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:onClick="goToLogbookMenu"
+                    android:text="@string/Mainmenu_records_button"
+                    android:textColor="#FAEBD7"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_Test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:onClick="goToTest"/>
+
+            <Button
+                android:id="@+id/viewTable_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="viewTable"
+                android:onClick="goToViewTable"/>
+
+            <Button
+                android:id="@+id/viewTableUI_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="viewTable UI"
+                android:onClick="goToViewTableUI"/>
+
+            <Button
+                android:id="@+id/sensorPlotTest_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToPlotTest"
+                android:text="SensorPlot Test" />
+
+            <Button
+                android:id="@+id/sensorPlotFB_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToSensorPlotFB"
+                android:text="SensorPlot FB" />
+
+            <Button
+                android:id="@+id/sensorPlotFBtest_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToSensorPlotFBtest"
+                android:text="SensorPlot FB Test" />
+
+            <Button
+                android:id="@+id/plotsFBPlant1Water_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToPlotsFBPlant11Water"
+                android:text="Plots Plant1 Water" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToTimeTablePlanta1"
+                android:text="View Time Table Planta1" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToLogbook_Add_Test"
+                android:text="Logbook add test" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

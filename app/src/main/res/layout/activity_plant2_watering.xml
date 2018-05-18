@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006699"
+    tools:context="org.intracode.heliot.Plant2Watering">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/Plant2Watering_mainmenu_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Huvudmeny"
+                android:onClick="goToHome_Menu_Plant2"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/Plant2Watering_waterAnotherPlant_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bevattna en annan planta"
+                android:onClick="goToBevattning_Plant2"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/Plant2Watering_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bevattning: Planta 2"
+                android:textSize="38sp"
+                android:background="#808080"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/Plant2Watering_stateWaterAmount_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ange vattenmängd (ml)"
+                android:textSize="30sp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+
+            <SeekBar
+                android:id="@+id/Plant2Watering_seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/Plant2Watering_stateWaterAmount_fill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/Plant2Watering_acceptWaterAmount_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acceptera angiven vattenmängd"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/Plant2Watering_acceptedWaterAmount_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Angiven vattenmängd:"
+                android:background="#FFFFFF"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/Plant2Watering_stateTime_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ange tidpunkt för bevattning"
+                android:textSize="30sp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+
+            <TimePicker
+                android:id="@+id/Plant2Watering_timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/Plant2Watering_approveTime_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acceptera angiven tid"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/Plant2Watering_statedTime_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Angiven tid:"
+                android:textSize="30sp"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/Plant2Watering_approveWatering_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Godkänn bevattningsplan"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/Plant2Watering_followingHasBeenApproved_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Följande bevattning har lagts till:"
+                android:textSize="24sp"
+                android:background="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/Plant2Watering_showParameters_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Planta nr:    Vattenmängd:   Tid:"
+                android:textSize="24sp"
+                android:background="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/Plant2Watering_showFinalParameters_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="24sp"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uppdatera eller radera bevattning"
+                android:textSize="24sp"
+                android:background="#808080"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Plant2Watering_textView_newPlant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Planta nr. :"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/Plant2Watering_editText_newPlant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Plant2Watering_textView_waterAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Vattenmängd :"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/Plant2Watering_editText_waterAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Plant2Watering_textView_timeHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Timslaget :"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/Plant2Watering_editText_timeHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Plant2Watering_textView_timeMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Minutslaget :"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/Plant2Watering_editText_timeMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Plant2Watering_textView_Ordernumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ordernummer :"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/Plant2Watering_editText_Ordernumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Plant2Watering_textView_accountComperer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Account vertification"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:id="@+id/Plant2Watering_editText_accountComperer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Plant2Watering_approveChange_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Godkänn ändring"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/Plant2Watering_approveDelete_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Godkänn borttagning"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

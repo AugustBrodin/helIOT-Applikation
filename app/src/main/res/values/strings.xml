@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Heliot</string>
+    <string name="enter_email">Ange Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_password">Ange Lösenord</string>
+    <string name="log_in_button">Logga In</string>
+    <string name="create_new_account_button">Skapa nytt konto</string>
+    <string name="Mainmenu_title_text">Huvudmeny</string>
+    <string name="Mainmenu_chooseAlternative_text">Välj från nedanstående aktiviteter</string>
+    <string name="Mainmenu_chooseWater_button">Utför ny bevattning</string>
+    <string name="Mainmenu_wateringScheme_button">Tidsschema</string>
+    <string name="Mainmenu_sensorValues_button">Sensorvärden</string>
+    <string name="Mainmenu_tablesStatistics_button">Tabeller och statistik</string>
+    <string name="Mainmenu_records_button">Loggbok</string>
+    <string name="Watering_title_text">Bevattning</string>
+    <string name="Watering_choosePlant_text">Välj vilken planta som ska bevattnas</string>
+    <string name="Watering_plant1_button">Planta nr. 1</string>
+    <string name="Watering_plant2_button">PLanta nr. 2</string>
+    <string name="Watering_plant3_button">Planta nr. 3</string>
+    <string name="Watering_plant4_button">Planta nr. 4</string>
+    <string name="Watering_plant5_button">Planta nr. 5</string>
+    <string name="Watering_plant6_button">Planta nr. 6</string>
+    <string name="Watering_plant7_button">Planta nr. 7</string>
+    <string name="Watering_plant8_button">Planta nr. 8</string>
+    <string name="Watering_plant9_button">Planta nr. 9</string>
+    <string name="update">Uppdatera</string>
+    <string name="delete">Ta bort</string>
+</resources>
